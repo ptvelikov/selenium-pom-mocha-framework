@@ -1,0 +1,52 @@
+{
+  "name": "selenium-pom-mocha-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 60000 --reporter mochawesome --file ./project-configuration/browser-setup/globalSetup.js",
+    "test-all": "node project-configuration/executor.js",
+    "merge-reports": "node project-configuration/reporting/generateMergedReport.js"
+  },
+  "keywords": [
+    "chai",
+    "mocha",
+    "selenium",
+    "selenium-webdriver",
+    "selenium-webdriver automation",
+    "webdriver manager",
+    "e2e tests",
+    "integration test",
+    "test automation",
+    "javascript",
+    "es modules"
+  ],
+  "author": "Preslav Velikov",
+  "license": "MIT",
+  "description": "A robust testing framework built on Selenium WebDriver, utilizing the Page Object Model design pattern. It leverages the Mocha test framework and Chai assertion library for clear and expressive tests, while the Mochawesome reporter generates detailed, visually appealing reports, enhancing test execution and analysis.",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
+    "marge": "^1.0.1",
+    "mocha": "^10.8.2",
+    "selenium-webdriver": "^4.26.0",
+    "webdriver-manager": "^12.1.9"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "directories": {
+    "test": "test-suites"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptvelikov/selenium-pom-mocha-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ptvelikov/selenium-pom-mocha-framework/issues"
+  },
+  "homepage": "https://github.com/ptvelikov/selenium-pom-mocha-framework"
+}

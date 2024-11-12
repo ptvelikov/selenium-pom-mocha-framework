@@ -1,0 +1,7 @@
+# Ignore node modules, .env
+node_modules/
+.env
+# Ignore all content inside mochawesome-report directory
+mochawesome-report/*
+# But keep track of the .gitkeep file
+!mochawesome-report/.gitkeep
